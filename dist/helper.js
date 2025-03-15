@@ -13,4 +13,5 @@ export const handleAnswer = async (isCorrect) => {
     else {
         spinner.error({ text: "Wrong answer :(" });
     }
+    await sleep(300);
 };

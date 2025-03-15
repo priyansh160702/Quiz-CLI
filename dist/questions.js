@@ -96,9 +96,10 @@ const QUESTIONS = [
     },
 ];
 export const questions = () => {
-    const questions = [];
-    for (let i = 0; i < 10; i++) {
-        questions.push(QUESTIONS[Math.floor(Math.random() * QUESTIONS.length)]);
+    const selectedQuestions = new Set();
+    while (selectedQuestions.size <= 10) {
+        const randomQuestion = QUESTIONS[Math.floor(Math.random() * QUESTIONS.length)];
+        selectedQuestions.add(randomQuestion);
     }
-    return questions;
+    return selectedQuestions;
 };
