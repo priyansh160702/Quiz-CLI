@@ -2,7 +2,6 @@
 import chalk from "chalk"; //Colors the output text in the terminal
 import chalkAnimation from "chalk-animation"; // Built on top of Chalk and animates the text in the terminal
 import inquirer from "inquirer"; // For collecting User input
-import gradient from "gradient-string";
 import figlet from "figlet";
 import { sleep } from "./helper";
 import { questionGenerator } from "./question-generator";

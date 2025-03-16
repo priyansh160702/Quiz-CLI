@@ -1,12 +1,17 @@
 {
-  "name": "quiz",
+  "name": "priyansh-quiz",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priyansh160702/Quiz-CLI"
+  },
   "scripts": {
     "start": "node .",
     "compile": "tsc --watch"
   },
+  "bin": "./dist/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
