@@ -97,9 +97,9 @@ const QUESTIONS = [
 ];
 export const questions = () => {
     const selectedQuestions = new Set();
-    while (selectedQuestions.size <= 10) {
+    while (selectedQuestions.size < 10) {
         const randomQuestion = QUESTIONS[Math.floor(Math.random() * QUESTIONS.length)];
         selectedQuestions.add(randomQuestion);
     }
-    return selectedQuestions;
+    return Array.from(selectedQuestions);
 };
